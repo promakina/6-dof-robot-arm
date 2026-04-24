@@ -1,0 +1,40 @@
+{
+  "kinematic_mode": {
+    "enabled": true,
+    "interpolation_alpha": 0.15
+  },
+  "joint_motor_control": {
+    "positionGain": 0.4,
+    "velocityGain": 1.5,
+    "maxVelocity_rad_s": 10.0,
+    "force": 500,
+    "jointDamping": 0.01
+  },
+  "ik_pybullet": {
+    "maxNumIterations": 200,
+    "residualThreshold": 0.0001
+  },
+  "physics_engine": {
+    "fixedTimeStep": null,
+    "numSolverIterations": null,
+    "numSubSteps": null,
+    "erp": null,
+    "cfm": null
+  },
+  "runtime_loop": {
+    "step_hz": 240,
+    "debug_update_hz": 20,
+    "state_update_hz": 15,
+    "ik_update_hz": 30,
+    "sleep_seconds": 0.0041666666667
+  },
+  "gravity_m_s2": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "visualizer": {
+    "fit_distance_scale": 1.0,
+    "min_distance": 0.2
+  }
+}

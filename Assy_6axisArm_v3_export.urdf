@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Assy_6axisArm_v3_export">
+    <link name="BASE">
+        <inertial>
+            <origin xyz="0.00014028620245360067 0.0189668361568062 0.042709728771082416" rpy="0.0 0.0 0.0" />
+            <mass value="4.8462628392536775" />
+            <inertia ixx="0.033006108213180466" iyy="0.009411928326058167" izz="0.02951242140490254" ixy="-9.824159081549551e-05" iyz="-0.0012436059756095897" ixz="9.647326911788443e-06" />
+        </inertial>
+        <visual name="BASE_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/BASE.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="base_graphite">
+                <color rgba="0.20 0.22 0.25 1.0" />
+            </material>
+        </visual>
+        <collision name="BASE_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/BASE.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JOINT1">
+        <inertial>
+            <origin xyz="1.3370121546484487e-05 -0.0016174683261682215 0.044969611007202044" rpy="0.0 -0.0 0.0" />
+            <mass value="1.5673814158149464" />
+            <inertia ixx="0.001339643966893532" iyy="0.001338407865528593" izz="0.0011789739120903558" ixy="-7.625677168682176e-07" iyz="5.2234910077286496e-05" ixz="-8.975958604838353e-07" />
+        </inertial>
+        <visual name="JOINT1_visual">
+            <origin xyz="-2.9423628253188576e-16 3.496939454428701e-18 -0.1165" rpy="2.5251741992413217e-17 2.4112755900118755e-15 0.0" />
+            <geometry>
+                <mesh filename="meshes/JOINT1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="joint1_blue">
+                <color rgba="0.16 0.39 0.78 1.0" />
+            </material>
+        </visual>
+        <collision name="JOINT1_collision">
+            <origin xyz="-2.9423628253188576e-16 3.496939454428701e-18 -0.1165" rpy="2.5251741992413217e-17 2.4112755900118755e-15 0.0" />
+            <geometry>
+                <mesh filename="meshes/JOINT1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JOINT2">
+        <inertial>
+            <origin xyz="1.4573641093203915e-05 0.07800879510167139 -0.016121633835417287" rpy="0.0 -0.0 0.0" />
+            <mass value="1.4543633396061308" />
+            <inertia ixx="0.0031900946992483997" iyy="0.0012496325740022005" izz="0.0028765162713740022" ixy="-1.208202737102955e-06" iyz="0.0007347695175559076" ixz="9.374980798166177e-07" />
+        </inertial>
+        <visual name="JOINT2_visual">
+            <origin xyz="7.179375750762432e-16 -1.5276668818842154e-15 0.00200000000000125" rpy="-3.5232233797089086e-15 2.4364734500394033e-15 1.5707963267948928" />
+            <geometry>
+                <mesh filename="meshes/JOINT2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="joint2_teal">
+                <color rgba="0.10 0.62 0.62 1.0" />
+            </material>
+        </visual>
+        <collision name="JOINT2_collision">
+            <origin xyz="7.179375750762432e-16 -1.5276668818842154e-15 0.00200000000000125" rpy="-3.5232233797089086e-15 2.4364734500394033e-15 1.5707963267948928" />
+            <geometry>
+                <mesh filename="meshes/JOINT2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JOINT3">
+        <inertial>
+            <origin xyz="-0.004126094691703558 0.014053913710910955 0.06268229140589632" rpy="2.1895288505075267e-47 4.379057701015054e-47 -7.919396663683225e-62" />
+            <mass value="1.2967387768386907" />
+            <inertia ixx="0.002248921529495378" iyy="0.0020059489443028647" izz="0.0010516971950781501" ixy="0.00010871192405927263" iyz="-0.0004985394209371749" ixz="9.305589150396253e-05" />
+        </inertial>
+        <visual name="JOINT3_visual">
+            <origin xyz="1.1280597478113864e-15 -0.002999999999998515 1.6342482922482305e-15" rpy="1.5707963267948992 1.5707963267948901 0" />
+            <geometry>
+                <mesh filename="meshes/JOINT3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="joint3_green">
+                <color rgba="0.24 0.64 0.30 1.0" />
+            </material>
+        </visual>
+        <collision name="JOINT3_collision">
+            <origin xyz="1.1280597478113864e-15 -0.002999999999998515 1.6342482922482305e-15" rpy="1.5707963267948992 1.5707963267948901 0" />
+            <geometry>
+                <mesh filename="meshes/JOINT3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JOINT4">
+        <inertial>
+            <origin xyz="-0.03520207838437657 2.0259227145800196e-05 0.0057677425920910005" rpy="0.0 -0.0 0.0" />
+            <mass value="0.9271296568786798" />
+            <inertia ixx="0.0005150506044051539" iyy="0.0006162882581331958" izz="0.0006417172543711075" ixy="2.983980033170741e-07" iyz="5.27857812827881e-07" ixz="7.0089739253373e-05" />
+        </inertial>
+        <visual name="JOINT4_visual">
+            <origin xyz="0.4101212954235114 -1.0658141036401502e-15 -3.3306690738754696e-15" rpy="1.570796326794901 -5.0482689317906966e-15 -1.5707963267949054" />
+            <geometry>
+                <mesh filename="meshes/JOINT4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="joint4_amber">
+                <color rgba="0.86 0.58 0.12 1.0" />
+            </material>
+        </visual>
+        <collision name="JOINT4_collision">
+            <origin xyz="0.4101212954235114 -1.0658141036401502e-15 -3.3306690738754696e-15" rpy="1.570796326794901 -5.0482689317906966e-15 -1.5707963267949054" />
+            <geometry>
+                <mesh filename="meshes/JOINT4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JOINT5">
+        <inertial>
+            <origin xyz="0.058216556927179176 1.4101951568505911e-05 -0.013730254036530436" rpy="9.86076131526265e-32 -6.776263578034384e-21 -6.018531076210113e-36" />
+            <mass value="1.2543696574264211" />
+            <inertia ixx="0.0009605827369947379" iyy="0.0016595983785940155" izz="0.0013647317311182778" ixy="2.819605255701275e-07" iyz="1.8861281117065538e-07" ixz="0.0004222445347034624" />
+        </inertial>
+        <visual name="JOINT5_visual">
+            <origin xyz="-1.7666797742066364e-07 1.7858266772918797e-07 0.004000000263124352" rpy="4.424220131908894e-05 4.4242201307506595e-05 3.1415926535897913" />
+            <geometry>
+                <mesh filename="meshes/JOINT5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="joint5_red">
+                <color rgba="0.78 0.24 0.24 1.0" />
+            </material>
+        </visual>
+        <collision name="JOINT5_collision">
+            <origin xyz="-1.7666797742066364e-07 1.7858266772918797e-07 0.004000000263124352" rpy="4.424220131908894e-05 4.4242201307506595e-05 3.1415926535897913" />
+            <geometry>
+                <mesh filename="meshes/JOINT5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JOINT6">
+        <inertial>
+            <origin xyz="0.015760754788396697 6.975917660334563e-07 -0.010388801100996404" rpy="-7.888609052210118e-31 3.5032461608120435e-46 0.0" />
+            <mass value="0.16268769182387013" />
+            <inertia ixx="2.7175872092906506e-05" iyy="9.074142026308654e-05" izz="0.00010535820816874947" ixy="-2.81227970044706e-09" iyz="5.543094582798643e-10" ixz="1.2528972359595137e-05" />
+        </inertial>
+        <visual name="JOINT6_visual">
+            <origin xyz="0.008773404041914503 -0.015839984724753026 0.6273118483235984" rpy="3.1415926535897785 -1.1645188648441581e-14 4.424220132170549e-05" />
+            <geometry>
+                <mesh filename="meshes/JOINT6.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="joint6_light_gray">
+                <color rgba="0.78 0.80 0.83 1.0" />
+            </material>
+        </visual>
+        <collision name="JOINT6_collision">
+            <origin xyz="0.008773404041914503 -0.015839984724753026 0.6273118483235984" rpy="3.1415926535897785 -1.1645188648441581e-14 4.424220132170549e-05" />
+            <geometry>
+                <mesh filename="meshes/JOINT6.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="J1" type="revolute">
+        <origin xyz="0.0 0.0 0.1165" rpy="0.0 -0.0 0.0" />
+        <parent link="BASE" />
+        <child link="JOINT1" />
+        <axis xyz="0.0 0.0 1.0" />
+        <limit lower="-3.141593" upper="3.141593" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="J2" type="revolute">
+        <origin xyz="0.0 -0.0325 0.05200000000000001" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="JOINT1" />
+        <child link="JOINT2" />
+        <axis xyz="0.0 0.0 1.0" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="J3" type="revolute">
+        <origin xyz="0.0 0.1 0.006499999999999999" rpy="-1.5707963267948966 7.88860905221012e-31 -3.94430452610506e-31" />
+        <parent link="JOINT2" />
+        <child link="JOINT3" />
+        <axis xyz="-7.888609052210118e-31 -0.9999999999999999 2.007805586832695e-31" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="J4" type="revolute">
+        <origin xyz="-0.03055033 0.032 0.08" rpy="1.5707963267948966 -3.944304526105059e-31 -1.7516230804060213e-46" />
+        <parent link="JOINT3" />
+        <child link="JOINT4" />
+        <axis xyz="-1.0 7.888609052210118e-31 0.0" />
+        <limit lower="-3.141593" upper="3.141593" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="J5" type="revolute">
+        <origin xyz="-0.044500000000000005 -1.3500000000021828e-06 0.03055033" rpy="-6.636609519011413e-16 4.424220132668222e-05 3.141592653589793" />
+        <parent link="JOINT4" />
+        <child link="JOINT5" />
+        <axis xyz="-4.424220131224914e-05 4.399999999933634e-05 0.999999999021314" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="J6" type="revolute">
+        <origin xyz="0.09555170141472691 -1.370000000022742e-06 -0.03099577261272541" rpy="1.5708405689962197 6.636609506021098e-16 -1.5707963267948966" />
+        <parent link="JOINT5" />
+        <child link="JOINT6" />
+        <axis xyz="1.9787967213606655e-30 3.6149931916635785e-15 -1.0" />
+        <limit lower="-3.141593" upper="3.141593" effort="1000000" velocity="1000000" />
+    </joint>
+	
+	<link name="tcp"/>
+	<joint name="JOINT6_to_tcp" type="fixed">
+	  <parent link="JOINT6"/>
+	  <child link="tcp"/>
+	  <origin xyz="0.05 0.0 -0.049" rpy="0 -3.1416 -3.1416"/>
+	 </joint>
+</robot>

@@ -1,0 +1,18 @@
+{
+  "robot_name": "HexaBot_v1",
+  "units": "degrees",
+  "can_settings": {
+    "interface": "slcan",
+    "port": "COM5",
+    "bitrate": 500000,
+    "tty_baudrate": 2000000,
+    "recv_timeout_s": 0.35
+  },
+  "motor_settings": {
+    "microstep": 64,
+    "enable_on_start": true,
+    "disable_on_exit": true,
+    "stepper_steps_per_rev": 200,
+    "encoder_ticks_per_rev": 16384
+  }
+}

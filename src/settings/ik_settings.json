@@ -1,0 +1,120 @@
+{
+  "robot_name": "HexaBot_v1",
+  "units": "degrees",
+  "can_settings": {
+    "interface": "slcan",
+    "port": "COM5",
+    "bitrate": 500000,
+    "recv_timeout_s": 0.35
+  },
+  "motor_settings": {
+    "microstep": 64,
+    "enable_on_start": true,
+    "disable_on_exit": true,
+    "stepper_steps_per_rev": 200,
+    "ticks_per_rev": 12800
+  },
+  "ps4_settings": {
+    "deadband": 0.6,
+    "send_interval_s": 0.01,
+    "acc_on_move": 6,
+    "acc_on_stop": 0,
+    "stop_burst": 2,
+    "axis_mapping": {
+      "left_x": 0,
+      "left_y": 1,
+      "right_x": 2,
+      "right_y": 3,
+      "l2": 4,
+      "r2": 5
+    },
+    "button_mapping": {
+      "l1": 9,
+      "r1": 10,
+      "trackpad": 15
+    },
+    "dpad_hat_index": 0
+  },
+  "homing": {
+    "timeout_s": 30.0
+  },
+  "dh_parameters": {
+    "units": "mm_deg",
+    "table": [
+      {
+        "joint": 1,
+        "alpha_deg": 90,
+        "d": 168.5,
+        "a": 0.0,
+        "theta_offset_deg": 0
+      },
+      {
+        "joint": 2,
+        "alpha_deg": 0,
+        "d": 0.0,
+        "a": 100.0,
+        "theta_offset_deg": 90
+      },
+      {
+        "joint": 3,
+        "alpha_deg": -90.0,
+        "d": 7.0,
+        "a": 80.0,
+        "theta_offset_deg": 0
+      },
+      {
+        "joint": 4,
+        "alpha_deg": 90.0,
+        "d": 75.0503,
+        "a": 0.0,
+        "theta_offset_deg": 0
+      },
+      {
+        "joint": 5,
+        "alpha_deg": -90.0,
+        "d": -0.4497,
+        "a": 0.0,
+        "theta_offset_deg": 0
+      },
+      {
+        "joint": 6,
+        "alpha_deg": 0,
+        "d": 0.0,
+        "a": 0.0,
+        "theta_offset_deg": 0
+      }
+    ]
+  },
+  "tcp": {
+    "xyz_mm": [
+      50.0,
+      0.0,
+      144.5503
+    ],
+    "rpy_deg": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_frame": "frame_6"
+  },
+  "solver": {
+    "single_seed": {
+      "max_iters": 200,
+      "tol_pos_mm": 0.5,
+      "tol_ori_rad": 0.0035,
+      "damping": 0.05,
+      "step_scale": 1.0,
+      "max_dq_deg": null
+    },
+    "multi_seed": {
+      "max_attempts": 25,
+      "prefer_closest_to_q0": true,
+      "seed_params": {
+        "n_random": 12,
+        "jitter_deg": 25.0,
+        "rng_seed": 0
+      }
+    }
+  }
+}

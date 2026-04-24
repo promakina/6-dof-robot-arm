@@ -1,0 +1,88 @@
+{
+  "joints": [
+    {
+      "id": 1,
+      "name": "base",
+      "min_angle": -170.0,
+      "max_angle": 170.0,
+      "home_pos": 0.0,
+      "speed_rpm": 4,
+      "max_speed_rpm": 6,
+      "acc": 3,
+      "sign_map": 1,
+      "gear_ratio": 101.0,
+      "invert_dir": false,
+      "work_current_mA": 2000
+    },
+    {
+      "id": 2,
+      "name": "shoulder",
+      "min_angle": -90.0,
+      "max_angle": 90.0,
+      "home_pos": 0.0,
+      "speed_rpm": 4,
+      "max_speed_rpm": 6,
+      "acc": 2,
+      "sign_map": 1,
+      "gear_ratio": 101.0,
+      "invert_dir": false,
+      "work_current_mA": 2000
+    },
+    {
+      "id": 3,
+      "name": "elbow",
+      "min_angle": -90.0,
+      "max_angle": 90.0,
+      "home_pos": 0.0,
+      "speed_rpm": 4,
+      "max_speed_rpm": 6,
+      "acc": 2,
+      "sign_map": 1,
+      "gear_ratio": 101.0,
+      "invert_dir": false,
+      "work_current_mA": 1800
+    },
+    {
+      "id": 4,
+      "name": "wrist_roll",
+      "min_angle": -170.0,
+      "max_angle": 170.0,
+      "home_pos": 0.0,
+      "speed_rpm": 4,
+      "max_speed_rpm": 6,
+      "acc": 2,
+      "sign_map": 1,
+      "gear_ratio": 101.0,
+      "invert_dir": false,
+      "work_current_mA": 1200
+    },
+    {
+      "id": 5,
+      "name": "wrist_pitch",
+      "min_angle": -90.0,
+      "max_angle": 90.0,
+      "home_pos": 0.0,
+      "speed_rpm": 4,
+      "max_speed_rpm": 6,
+      "acc": 2,
+      "sign_map": 1,
+      "gear_ratio": 51.0,
+      "invert_dir": true,
+      "work_current_mA": 1200
+    },
+    {
+      "id": 6,
+      "name": "wrist_yaw",
+      "min_angle": -170.0,
+      "max_angle": 170.0,
+      "home_pos": 0.0,
+      "speed_rpm": 4,
+      "max_speed_rpm": 6,
+      "acc": 4,
+      "sign_map": 1,
+      "gear_ratio": 51.0,
+      "invert_dir": true,
+      "work_current_mA": 1200
+    }
+  ]
+}
